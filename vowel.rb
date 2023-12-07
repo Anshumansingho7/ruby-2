@@ -1,6 +1,6 @@
 #q9
 def vowel(string)
-    a = string.split(',')
+    a = string.split('')
     b = a.length
     v = ["a","e","i","o","u"]
     vow = []
