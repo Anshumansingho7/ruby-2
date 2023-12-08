@@ -12,7 +12,7 @@ def vowel(string)
         else 
             con.push(a[c])
         end
-        c=+1
+        c+=1
     end
     puts "vowel letter in string are #{vow}"
     puts "consonant letter in string are #{con}"
