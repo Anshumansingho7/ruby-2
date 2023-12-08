@@ -1,24 +1,16 @@
 #q7
-def prime(s)
-    a = 2
-    f = 0
-    if a === s 
-        a = a+101
-    end
-        while a<100
-            if s === a 
-                f === 1
-            else
-                f = s%a
-            end
-            if f === 0 
-                return "#{s} is not a prime number"
-            a = a+101
-            end
-            a +=1
-        end
-            return "#{s} is a prime number"
+print "enter a value:" 
+s = gets.chomp.to_i
+f = s/2
+arr = (2..f).to_a 
+#puts "#{arr}"
 
+array = arr.map { |element| s % element.to_f }
+
+#puts "#{array}"
+
+if array.any? { |num| num === 0 }
+    puts "#{s} is not a prime number"
+else 
+  print "#{s} is a prime number"
 end
-
-puts prime(52)
