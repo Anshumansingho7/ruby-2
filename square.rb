@@ -1,12 +1,9 @@
 #q4
-def square (l , w, h)
-    if l==w && w==h 
-        puts "this is a cube"
-    elsif l==w
-        puts "this is a square"
-    else
-        puts "this is not a cube or a square"
-    end
+def square (l)
+    square = l*l
+    cube = l*l*l
+    puts "square root is #{square}"
+    puts "cube is #{cube}"
 end
 
-square(22, 44, 0)
+square(22)
